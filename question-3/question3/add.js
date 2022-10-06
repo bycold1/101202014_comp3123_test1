@@ -13,9 +13,9 @@ let add = function () {
    catch (err) {
        console.log('change directory error: ' + err);
    }
-   let data = 'I dont know what to say, so hello';
-   for (let i = 0; i < 10; i++) {
-       fs.writeFile(`log${i}.txt`, data+i, function(err){
+   let data = 'I am a student of George Brown College, Hello world';
+   for (let i = 1; i < 11; i++) {
+       fs.writeFile(`log${i}.txt`, data, function(err){
            if (!err) {
                console.log(`log${i}.txt`)
            }
